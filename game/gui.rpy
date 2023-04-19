@@ -61,8 +61,8 @@ define gui.choice_button_borders = Borders(150, 8, 150, 8)
 define gui.choice_button_text_font = gui.text_font
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xalign = 0.5
-define gui.choice_button_text_idle_color = "#C74375"
-define gui.choice_button_text_hover_color = "#ff5898"
+define gui.choice_button_text_idle_color = "#e5003d"
+define gui.choice_button_text_hover_color = "#e5003d"
 define gui.choice_button_text_insensitive_color = "#444444"
 define gui.slot_button_width = 414
 define gui.slot_button_height = 309
@@ -136,41 +136,14 @@ define gui.nvl_button_xalign = 0.0
 define gui.language = "unicode"
 
 init python:
-
-    @gui.variant
-    def touch():
-
-        gui.quick_button_borders = Borders(60, 21, 60, 0)
-
     @gui.variant
     def small():
-        gui.text_size = 45
+        gui.text_size = 48
         gui.name_text_size = 54
-        gui.notify_text_size = 38
-        gui.interface_text_size = 45
-        gui.button_text_size = 45
-        gui.label_text_size = 51
-        gui.textbox_height = 360
-        gui.name_xpos = 120
-        gui.dialogue_xpos = 135
-        gui.dialogue_width = 1650
-        gui.slider_size = 54
-        gui.choice_button_width = 1860
-        gui.choice_button_text_size = 45
-        gui.navigation_spacing = 30
-        gui.pref_button_spacing = 15
-        gui.history_height = 285
-        gui.history_text_width = 1035
-        gui.quick_button_text_size = 30
+        gui.notify_text_size = 35
+        gui.interface_text_size = 50
+        gui.button_text_size = 43
+        gui.label_text_size = 44
         gui.file_slot_cols = 2
         gui.file_slot_rows = 2
-        gui.nvl_height = 255
-        gui.nvl_name_width = 458
-        gui.nvl_name_xpos = 488
-        gui.nvl_text_width = 1373
-        gui.nvl_text_xpos = 518
-        gui.nvl_text_ypos = 8
-        gui.nvl_thought_width = 1860
-        gui.nvl_thought_xpos = 30
-        gui.nvl_button_width = 1860
-        gui.nvl_button_xpos = 30
+        gui.choice_button_text_size = 50

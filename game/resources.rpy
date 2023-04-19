@@ -85,3 +85,7 @@ define flash = Fade(.25, 0, .75, color="#fff")
 define score = 0
 define choices = set()
 ## Begin /OTHER/VARS
+
+## Begin /OTHER/PERSIST
+define persistent.disclaimer = True
+## End /OTHER/PERSIST

@@ -9,13 +9,14 @@ label start:
     
     stop music fadeout 2.0
     window hide
-    scene bg 0 with dissolve
-
-    show text "{color=#e5003d}{font=fonts/ArthurGothicRegular.ttf}{size=+30}ДИСКЛЕЙМЕР!\n\n{/size}В данной игре присутствуют темы самоубийства и наркотиков.\nНе рекомендуется играть людям младше 16 лет.{/fonts}{/color}" at truecenter with dissolve
-
-    $ renpy.pause(4.5, hard=True)
-
-    hide text with dissolve
+    
+    if persistent.disclaimer:
+        scene bg 0 with dissolve
+        show text "{color=#e5003d}{font=fonts/ArthurGothicRegular.ttf}{size=+30}ДИСКЛЕЙМЕР!\n\n{/size}В данной игре присутствуют темы самоубийства и наркотиков.\nНе рекомендуется играть лицам младше 16 лет.{/fonts}{/color}" at truecenter with dissolve
+        $ renpy.pause(8.5)
+        hide text with dissolve
+        $ persistent.disclaimer = False
+    
     scene bg 1 with dissolve
 
     window show dissolve

@@ -6,7 +6,6 @@ init -999 python:
             page, name = newest.split("-")
             return (page, name)
 
-
     class Continue(Action):
         def __call__(self):
             if not self.get_sensitive():

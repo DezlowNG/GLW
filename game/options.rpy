@@ -1,6 +1,6 @@
 ﻿define config.name = _("Последнее желание девочки")
 define gui.show_name = False
-define config.version = "1.0"
+define config.version = "1.1"
 
 define build.name = "glw"
 
@@ -22,6 +22,9 @@ default preferences.text_cps = 0
 default preferences.afm_time = 15
 define config.save_directory = "glw-1680229233"
 define config.window_icon = "gui/window_icon.png"
+
+define config.gestures = { "s" : "game_menu", "e" : "skip" }
+define config.dispatch_gesture = None
 
 init python:
     build.classify('**~', None)
